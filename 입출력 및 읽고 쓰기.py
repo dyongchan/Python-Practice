@@ -76,5 +76,25 @@ for i in range(11,20):
 f.close
 
 with 문 # close 안해도 됨 / 간단하게 사용
-with open("foo.txt", "w") as f: # 쓰기모드로 파일을 열어서 f라는 변수에 저장한다 / 지역변수 개념 적용 with 문 끝 시 f는 close
+with open("foo.txt", "w") as f: # 쓰기모드로 파일을 열어서 f라는 변수에 저장한다
+# 지역변수 개념 적용 with 문 끝 시 f는 close
     f.write("Life is too short, you need python")
+
+변하는 자료형(Immutable) vs 변하지 않는 자료형(Mutable)
+Immutable : 정수, 실수, 문자열 ,튜플
+Mutable : 리스트, 딕셔너리, 집합
+
+# Immutable
+a = 1
+def vartest(a):
+    a = a + 1 # 지역변수
+vartest(a)
+print(a) # a = 1 출력 (리턴값 존재 하지않음)
+
+# Mutable
+b = [1,2,3] # 전역변수
+def vartest2(b):
+    b = b.apppend(4) # 지역변수
+vartest2(b)
+print(b) # b = [1,2,3,4] 출력 / 전역변수와 지역변수로 나뉘어 서로 별개이다.
+# 같은 주소값이 들어가서 그대로 사용한다. Mutable이기 때문에 전역변수가 변화가 가능하다
