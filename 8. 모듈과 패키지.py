@@ -92,10 +92,22 @@ e()
 5. from game.sound import * # game.sound 속 폴더의 모든 파일을 불러와라
 echo.echo_test()
 
+# __all__ 패키지
 # init.py
 C:/jocoding/gmae/sound/__init__.py
 __all__ = ['echo'] # init.p 파일에 기록할 시 가져올 수 있음
 
 # echo2 라는 파일을 추가적으로 생성했을 시 init.py 파일에서 추가해줘야 *(all) 로 불러올 수 있다.
 __all__ = ['echo', 'echo2', 'aaaa'...] # 계속적으로 추가할 수 있음
+
+# relative 패키지
+# game 폴더 속 graphic 폴더 render file = sound와는 별개의 폴더에서 sound의 echo를 불러올 때 사용
+
+# render.py
+from ..sound.echo import echo test # .. : 이전 폴더로 들어간다
+# ..을 통해 graphic 밖의 game 폴더로 들어가고 game 폴더 속에서 echo라는 모듈을 가져오겠다
+def render_test():
+    print("remder")
+    echo_test()
+# render 라는 file에서 echo라는 모듈을 사용하고 싶을 때 쓰는 방식
 
