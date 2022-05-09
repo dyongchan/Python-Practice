@@ -98,10 +98,10 @@ a.find('b') # 2 (가장 먼저오는 항목을 알려줌)
 a.find('k') # -1 (없으면 -1)
 
 - 문자열 삽입 (join)
-a = ","join("abcd")
+a = ",".join("abcd")
 # a,b,c,d
 
-a = ","join(["a","b","c","d"]) # list와 함께 많이 사용
+a = ",".join(["a","b","c","d"]) # list와 함께 많이 사용
 # a,b,c,d
 
 - 소문자를 대문자로 / 대문자를 소문자로 (upper / lower)
