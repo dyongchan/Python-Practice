@@ -1,4 +1,3 @@
-a = ["사과", "포도", "복숭아"]
-a[0] = "키위"
-
-print(a)
+l = [1,2,2,3,4]
+newlist = list(set(l))
+print(newlist)
