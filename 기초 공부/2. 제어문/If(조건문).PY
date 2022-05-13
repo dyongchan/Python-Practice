@@ -66,3 +66,43 @@ if money >= 3000 and card: # 두가지 조건 모두 True이므로 참 (and)
   print("택시를 타고가라")
 else:
   print("걸어가라") # "택시를 타고가라"
+
+'''
+x in s : (찾는 값) in (리스트,튜플.. 여러 값을 포함하는 구조)
+x not in s : (찾는 값) in (찾는값 없는가)
+'''
+
+실습 
+if 1 in [1,2,3]:
+  print("택시를 타고가라")
+else:
+  print("걸어가라")  # "택시를 타고가라"
+
+- 조건문에서 아무런 일이 나오지 않게 만들 때
+if 1 in [1,2,3]:
+  pass # (지나가라)
+else:
+  print("걸어가라") # 결과값 아무것도 안나옴
+
+- 다중 조건 판단 elif # 여러개의 elif를 통하여 다중 조건 추가 가능
+pocket = ['paper', 'cellphone']
+card = True
+if 'money' in pocekt:
+  pass
+elif card:
+  print("택시를 타고가라")
+else:
+  print("걸어가라")
+
+- 조건부 표현식
+1. 기존 코드
+score = 70
+if scroe >= 60:
+  message = "success"
+else:
+  message = "failure"
+print(message)
+
+2. 간결한 조건부 표현식 # 성공일때의 조건식을 먼저 쓴 후 다음 조건식 작성
+message = "success" if scroe >=60 else "failure"
+print(message)
