@@ -45,7 +45,7 @@ if money >= 3000:
 else:
   print("걸어가라")
 
-''' and, or not
+''' and, or, not
 x or( | }y : x와 y 둘중에 하나만 참이면 참
 x and(&) y : x와 y 모두 참이어야 참
 not x : x가 거짓이면 참 # True는 False로 / False 는 True로 바뀜
