@@ -1,7 +1,6 @@
-money = 3000
-card =1
-
-if money >= 3000 or card:
-  print("택시를 타라")
-else:
-  print("걸어 가라")
+treeHit = 0
+while treeHit < 10:
+    treeHit = treeHit + 1
+    print("나무르,ㄹ %d번 찍었습니다." % treeHit)
+    if treeHit ==10:
+        print("나무 넘어갑니다.")
