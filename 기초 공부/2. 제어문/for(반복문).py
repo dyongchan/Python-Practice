@@ -49,8 +49,35 @@ for mark in marks:
 
 
 실습5 range
-sum = 0
-for i in range(1,12): # (이상, 미만)
-    .sum = sum + i
-  print(sum)
 
+sum = 0
+for i in range(1,11): # (이상, 미만)
+    sum = sum + i
+print(sum)
+
+실습6  - 구구단
+
+for i in range(2,10):
+    for j in range(1,10):
+        print(i*j, end=" ") # print 함수의 옵션 / 공백 하나씩 추가 함
+    print('') # 일반적인 string : 그냥 출력
+
+
+리스트 내포 (List comprehension)
+
+result = [num * for num in a]
+
+= result = []
+for num in a:
+    result.append(num*3)
+
+print(result) # [3, 6, 9, 12]
+
+result = [num * 3 for num in a if num%2 == 0]
+
+= result = []
+for num in a:
+    if num % 2 ==0"
+    result.append(num*3)
+
+print(result) # [6, 12]
