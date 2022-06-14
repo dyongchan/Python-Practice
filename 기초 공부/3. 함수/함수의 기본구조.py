@@ -36,3 +36,17 @@ def say():
   print('Hi')
 print(say())
 # none
+
+여러 개의 입력값
+def sum(*args): # 여러개의 인자를 한 번에 받을 수 있다
+  sum = 0
+  for i in args:
+    sum = sum + i
+    return sum
+
+def sum_many(a,b): # 인자의 개수가 맞지 않다고 출력
+  # *args 사용
+    sum = 0
+  for i in args:
+    sum = sum + i
+    return sum_many(1,2,3)
