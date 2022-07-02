@@ -1,3 +1,4 @@
+from ast import arguments, keyword
 from unittest import result
 
 
@@ -50,3 +51,10 @@ def sum_many(a,b): # 인자의 개수가 맞지 않다고 출력
   for i in args:
     sum = sum + i
     return sum_many(1,2,3)
+
+키워드 피라미터 (keyword arguments)
+def print_kwargs(**kwargs): # dict의 형태로 여러개의 값을 받을 수 있는 매개변수
+  for k in kwargs.keys():
+    if(k == "name"):
+      print("당신의 이름은 :" + kwargs[k]) 
+print(print_kwargs(name="int 조수", b="2"))
